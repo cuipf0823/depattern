@@ -1,5 +1,8 @@
 #ifndef ABSTRACT_FACTORY_H
 #define ABSTRACT_FACTORY_H
+/*
+*	抽象工厂模式
+*/
 #include <iostream>
 #include <assert.h>
 using namespace std;

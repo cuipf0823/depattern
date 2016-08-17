@@ -1,4 +1,7 @@
 #include <list>
+/*
+*	观察者模式
+*/
 
 class Subject;
 
