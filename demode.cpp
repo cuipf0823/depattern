@@ -4,6 +4,7 @@
 #include "builder.h"
 #include "factory_method.h"
 #include "prototype.h"
+#include "bridge.h"
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -16,6 +17,8 @@ int main(int argc, char *argv[])
 	cout << "*******************************" << endl;
 	test_prototype();
 	test_prototype_manager();
+	cout << "*******************************" << endl;
+	test_bridge();
 	getchar();
 	return 0;
 }
