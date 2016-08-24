@@ -6,6 +6,8 @@
 #include "prototype.h"
 #include "bridge.h"
 #include "composite.h"
+#include "decorator.h"
+#include "facade.h"
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -22,6 +24,10 @@ int main(int argc, char *argv[])
 	test_bridge();
 	cout << "*******************************" << endl;
 	composite::test_composite();
+	cout << "*******************************" << endl;
+	decorator::test_decorator();
+	cout << "*******************************" << endl;
+	facade::test_facade();
 	getchar();
 	return 0;
 }
