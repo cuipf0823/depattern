@@ -1,12 +1,12 @@
 #ifndef FACTORY_METHOD_H
 #define FACTORY_METHOD_H
 /*
-*	工厂方法模式
+*	宸ュ巶鏂规硶妯″紡
 */
 #include <iostream>
 using namespace std;
 
-//类工厂方法所创建的对象的接口
+//绫诲伐鍘傛柟娉曟墍鍒涘缓鐨勫璞＄殑鎺ュ彛
 class Document
 {
 public:

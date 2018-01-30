@@ -1,7 +1,7 @@
 #ifndef DECORATOR_H
 #define DECORATOR_H
 /*
-*	×°ÊÎÄ£Ê½
+*	è£…é¥°æ¨¡å¼
 */
 #include <iostream>
 using namespace std;
@@ -35,7 +35,7 @@ public:
 protected:
 	VisualComponent* component_;
 };
-//´°¿ÚÌí¼Ó±ß¿ò
+//çª—å£æ·»åŠ è¾¹æ¡†
 class BorderDecorator : public Decorator
 {
 public:
@@ -62,7 +62,7 @@ private:
 	int border_width_;
 };
 
-//´°¿ÚµÄÏÔÊ¾¹ö¶¯Ìõ
+//çª—å£çš„æ˜¾ç¤ºæ»šåŠ¨æ¡
 class ScrollDecorator : public Decorator
 {
 public:
@@ -85,7 +85,7 @@ public:
 	}
 };
 
-//window´°¿ÚÖĞÓÃÓÚÏÔÊ¾ÕıÎÄ
+//windowçª—å£ä¸­ç”¨äºæ˜¾ç¤ºæ­£æ–‡
 class TextView :public VisualComponent
 {
 public:
@@ -102,7 +102,7 @@ public:
 	}
 };
 
-//windowÊµÀı
+//windowå®ä¾‹
 class Window
 {
 public:

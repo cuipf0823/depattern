@@ -1,19 +1,19 @@
 #ifndef ABSTRACT_FACTORY_H
 #define ABSTRACT_FACTORY_H
 /*
-*	³éÏó¹¤³§Ä£Ê½
+*	æŠ½è±¡å·¥å‚æ¨¡å¼
 */
 #include <iostream>
 #include <assert.h>
 using namespace std;
 
-//linux ²úÆ·ÏµÁĞ
+//linux äº§å“ç³»åˆ—
 class LinuxOS
 {
 public:
 	LinuxOS(){};
 	virtual ~LinuxOS(){};
-	//linux²úÆ·µÄ¹«¹²½Ó¿Ú
+	//linuxäº§å“çš„å…¬å…±æ¥å£
 	virtual void StartUp() = 0;
 	virtual void ShutDown() = 0;
 };
@@ -60,7 +60,7 @@ public:
 	}
 };
 
-//windows²úÆ·ÏµÁĞ
+//windowsäº§å“ç³»åˆ—
 class Windows
 {
 public:
@@ -121,12 +121,12 @@ public:
 	{
 
 	};
-	//¸Ã¹¤³§Á½¸ö²úÆ·Ïß
+	//è¯¥å·¥å‚ä¸¤ä¸ªäº§å“çº¿
 	virtual LinuxOS* CreateLinuxOS() = 0;
 	virtual Windows* CreateWindows() = 0;
 };
 
-//ÒÆ¶¯³§ÉÌ
+//ç§»åŠ¨å‚å•†
 class MobileFactory : public Factory
 {
 public:
@@ -148,7 +148,7 @@ public:
 	}
 };
 
-//pc³§ÉÌ
+//pcå‚å•†
 class PCFactory : public Factory
 {
 public:
@@ -177,7 +177,7 @@ void ProductLineTest(Factory* factory)
 
 	linux_os = factory->CreateLinuxOS();
 	windows = factory->CreateWindows();
-	//¹¦ÄÜ²âÊÔ
+	//åŠŸèƒ½æµ‹è¯•
 	linux_os->StartUp();
 	linux_os->ShutDown();
 	windows->StartUp();

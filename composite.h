@@ -1,7 +1,7 @@
 #ifndef COMPOSITE_H
 #define COMPOSITE_H
 /*
-*	组合模式
+*	缁勫悎妯″紡
 */
 #include <iostream>
 #include <vector>

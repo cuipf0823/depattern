@@ -1,7 +1,7 @@
 #ifndef PROTOTYPE_H
 #define PROTOTYPE_H
 /*
-*	 Ô­ĞÍÄ£Ê½
+*	 åŸå‹æ¨¡å¼
 */
 #include <iostream>
 #include <vector>
@@ -17,7 +17,7 @@ public:
 	virtual Graphic* Clone() = 0;
 };
 
-//ÎåÏßÆ×
+//äº”çº¿è°±
 class Staff : public Graphic
 {
 public:
@@ -37,7 +37,7 @@ public:
 	}
 };
 
-//Òô·û
+//éŸ³ç¬¦
 class MusicalNote : public Graphic
 {
 public:
@@ -67,7 +67,7 @@ void test_prototype()
 
 }
 
-//½ÓÉÏÃæ Ìí¼ÓÔ­ĞÍ¹ÜÀíÆ÷µÄÊ¹ÓÃ
+//æ¥ä¸Šé¢ æ·»åŠ åŸå‹ç®¡ç†å™¨çš„ä½¿ç”¨
 class GraphicManager
 {
 public:

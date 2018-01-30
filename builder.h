@@ -1,11 +1,11 @@
 #ifndef BUILDER_H
 #define BUILDER_H
 /*
-*	������ģʽ
+*	生成器模式
 */
 /*
-*	ʵ����һ��RTF�ĵ�������ʽ���Ķ���Ӧ�ܽ�RTFת��Ϊ�������ĸ�ʽ������ת������Ŀ�����޵�
-*         ʹ��������ģʽ���Ժ�����ʵ�������µ�ת��ģʽ ͬ�²��ı�RTF�Ķ���
+*	实例：一个RTF文档交换格式的阅读器应能将RTF转换为多种正文格式；而且转换的数目是无限的
+*         使用生成器模式可以很容易实现增加新的转换模式 同事不改变RTF阅读器
 */
 
 #include <iostream>
@@ -72,7 +72,7 @@ public:
 	void ConvertCharacter()
 	{
 		cout << "Convert character ..." << endl;
-		//�޸�asscii_text_;
+		//修改asscii_text_;
 	}
 
 	Text* GetASCIIText()
@@ -98,7 +98,7 @@ public:
 	virtual void ConvertCharacter()
 	{
 		cout << "Convert Character ..." << endl;
-		//�޸�TexText;
+		//修改TexText;
 	}
 	virtual void ConvertFontChange()
 	{

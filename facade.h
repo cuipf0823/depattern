@@ -1,7 +1,7 @@
 #ifndef FACADE_H
 #define FACADE_H
 /*
-*	Íâ¹ÛÄ£Ê½
+*	å¤–è§‚æ¨¡å¼
 */
 #include <iostream>
 using namespace std;
@@ -9,8 +9,8 @@ using namespace std;
 namespace facade
 {
 /*
-*  	 SyntaxParser,GenMidCode,GenAssemblyCode,LinkSystemÓÃÓÚÊµÏÖÒ»¸ö¸´ÔÓµÄ
-*	 ±àÒëÆ÷ÏµÍ³£¬ÏÂÃæÊ¹ÓÃ×î¼òµ¥·½·¨±íÊ¾
+*  	 SyntaxParser,GenMidCode,GenAssemblyCode,LinkSystemç”¨äºå®ç°ä¸€ä¸ªå¤æ‚çš„
+*	 ç¼–è¯‘å™¨ç³»ç»Ÿï¼Œä¸‹é¢ä½¿ç”¨æœ€ç®€å•æ–¹æ³•è¡¨ç¤º
 */
 class SyntaxParser
 {
@@ -48,7 +48,7 @@ public:
 	}
 };
 
-//facadeÍâ¹ÛÄ£Ê½Àà
+//facadeå¤–è§‚æ¨¡å¼ç±»
 class Compiler
 {
 public:
@@ -65,7 +65,7 @@ public:
 	}
 };
 
-//ÆäËûÏµÍ³
+//å…¶ä»–ç³»ç»Ÿ
 void test_facade()
 {
 	Compiler compiler;

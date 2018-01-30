@@ -1,6 +1,6 @@
 #include <list>
 /*
-*	¹Û²ìÕßÄ£Ê½
+*	è§‚å¯Ÿè€…æ¨¡å¼
 */
 
 class Subject;
@@ -47,7 +47,7 @@ void Subject::Notify()
 }
 
 /*
-	ÏÂÃæÒÔClockTimerÎªÀı£¬ËµÃ÷¹Û²ìÕßÄ£Ê½µÄÊ¹ÓÃ
+	ä¸‹é¢ä»¥ClockTimerä¸ºä¾‹ï¼Œè¯´æ˜è§‚å¯Ÿè€…æ¨¡å¼çš„ä½¿ç”¨
 */
 class ClockTimer : public Subject
 {
@@ -61,7 +61,7 @@ public:
 
 void ClockTimer::Tick()
 {
-	//Ê±¼ä±ä»» ¸üĞÂÊ±¼ä 
+	//æ—¶é—´å˜æ¢ æ›´æ–°æ—¶é—´ 
 	Notify();
 }
 
@@ -70,7 +70,7 @@ class DigitClock : public Observer
 public:
 	DigitClock(ClockTimer* timer);
 	virtual ~DigitClock();
-	//ÖØÔØupdate
+	//é‡è½½update
 	void Update(Subject* change_subject);
 private:
 	ClockTimer* timer_;
@@ -91,7 +91,7 @@ void DigitClock::Update(Subject* change_subject)
 {
 	if (change_subject == timer_)
 	{
-		//Ê±¼ä±ä»¯ Draw();
+		//æ—¶é—´å˜åŒ– Draw();
 	}
 }
 
